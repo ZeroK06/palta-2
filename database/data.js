@@ -5,6 +5,7 @@ export default {
     sku: "NUR72KCM",
     price: 1.15,
     image: "/images/maluma.jpg",
+    stars: 3,
     attributes: {
       description:
         "A relatively new cultivar, it was, the pretty boy baby, discovered in South Africa in the early 1990s by Mr. A.G. (Dries) Joubert. Maluma Babyy. It is a chance seedling of unknown parentage",
@@ -18,6 +19,7 @@ export default {
     id: "6trfgkkj",
     sku: "AX4M8SJV",
     price: 1.21,
+    stars: 3,
     image: "/images/fuerte.jpg",
     attributes: {
       description:
@@ -32,6 +34,7 @@ export default {
     id: "7bcr49em",
     sku: "HYA78F6J",
     price: 1.25,
+    stars: 3,
     image: "/images/gwen.jpg",
     attributes: {
       description:
@@ -46,6 +49,7 @@ export default {
     id: "098323ks",
     sku: "BXD100BLK",
     price: 1.51,
+    stars: 3,
     image: "/images/bacon.jpg",
     attributes: {
       description:
@@ -60,6 +64,7 @@ export default {
     id: "b8uthe2y",
     sku: "RMRCZN7E",
     price: 1.39,
+    stars: 3,
     image: "/images/hass.jpg",
     attributes: {
       description:
@@ -74,6 +79,7 @@ export default {
     id: "ewxsd6xb",
     sku: "N55229ZA",
     price: 1.34,
+    stars: 3,
     image: "/images/lamb.jpg",
     attributes: {
       description:
@@ -88,6 +94,7 @@ export default {
     id: "fpr72m9k",
     sku: "B4HZ42TM",
     price: 1.27,
+    stars: 3,
     image: "/images/pinkerton.jpg",
     attributes: {
       description:
@@ -102,6 +109,7 @@ export default {
     id: "t9dv25gs",
     sku: "ZY3T9XXC",
     price: 1.18,
+    stars: 3,
     image: "/images/reed.jpg",
     attributes: {
       description:
@@ -116,6 +124,7 @@ export default {
     id: "t345w48y",
     sku: "MW79ZZ6Y",
     price: 1.25,
+    stars: 3,
     image: "/images/zutano.jpg",
     attributes: {
       description:

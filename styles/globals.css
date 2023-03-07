@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  user-select: none;
 }
 html {
   color-scheme: light;
@@ -15,5 +16,123 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.card {
+  @apply rounded-lg overflow-hidden border-gray-200 border dark:border-gray-600;
+}
+.card__body {
+  @apply px-4 py-7;
+}
+.card__title {
+  @apply text-lg font-medium;
+}
+.card__description {
+  @apply text-sm text-gray-400;
+}
+.card__sku {
+  @apply px-3 py-1 text-xs font-medium bg-slate-200 dark:bg-slate-600 rounded-md;
+}
+.product {
+  @apply grid grid-cols-2 gap-4 py-6;
+}
+.product__title {
+  @apply text-4xl font-semibold;
+}
+.product__sku {
+  @apply card__sku;
+}
+.product__description {
+  @apply card__description;
+}
+.product__features {
+  @apply flex flex-col items-start gap-4 relative;
+  z-index: -1;
+}
+.moreFeatures__title {
+  @apply text-xl font-semibold;
+}
+.product__image {
+  @apply p-3;
+}
+.image__container {
+  cursor: zoom-in;
+}
+
+.containerImage.open {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  z-index: 9;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.background.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.containerImage > img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.add__count {
+  @apply px-3 py-2 outline-none font-semibold text-sm bg-gray-200 rounded dark:bg-gray-700;
+}
+.add__cart {
+  background-color: #00b894;
+  @apply px-3 py-2 outline-none font-semibold text-sm w-32 flex justify-center rounded shadow-lg text-white;
+}
+.spinner {
+  height: 25;
+  width: 25px;
+  border: 5px solid #fff;
+}
+.product__add {
+  @apply flex gap-5;
+}
+.spinner_jCIR {
+  animation: spinner_B8Vq 0.9s linear infinite;
+  animation-delay: -0.9s;
+}
+.spinner_upm8 {
+  animation-delay: -0.8s;
+}
+.spinner_2eL5 {
+  animation-delay: -0.7s;
+}
+.spinner_Rp9l {
+  animation-delay: -0.6s;
+}
+.spinner_dy3W {
+  animation-delay: -0.5s;
+}
+@keyframes spinner_B8Vq {
+  0%,
+  66.66% {
+    animation-timing-function: cubic-bezier(0.36, 0.61, 0.3, 0.98);
+    y: 6px;
+    height: 12px;
+  }
+  33.33% {
+    animation-timing-function: cubic-bezier(0.36, 0.61, 0.3, 0.98);
+    y: 1px;
+    height: 22px;
   }
 }
